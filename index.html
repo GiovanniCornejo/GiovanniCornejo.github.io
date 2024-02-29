@@ -4,11 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Site!</title>
+  <title>Giovanni Cornejo Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display|Lora|Crimson+Text|Montserrat" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
 <body>
-  <h1>This is my GitHub Pages website!</h1>
+  <!--NAVBAR-->
+  <header class="banner-wrap">
+    <h1><a href="https://www.linkedin.com/in/GiovanniCornejo/" target="_blank">Giovanni Cornejo</a></h1>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#links">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--WELCOME SECTION-->
+    <section id="welcome-section" class="welcome-section">
+      <!--Picture on left-->
+      <img src="https://avatars.githubusercontent.com/u/60558512?v=4" alt="picture of me">
+
+      <!--Text on right-->
+      <div class="welcome-text">
+        <h1>Hi, I'm <span class="accent-text">Giovanni Cornejo</span></h1>
+        <h2>Computer Engineer</h2>
+        <p>
+          Passionate about exploring innovative engineering solutions,<br>
+          a collaborative team player with strong time management,<br>
+          problem-solving, and communication skills.
+        </p>
+        <a href="Cornejo G 20240214 Resume.pdf" target="_blank" download>Download Resume</a>
+        
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!--PROJECT SECTION-->
+    <section id="projects" class="project-section">
+      <h2>Featured Projects</h2>
+
+      <div class="projects-grid">
+        <a class="project-tile" href="https://github.com/GiovanniCornejo/Qtune">
+          <img src="https://github.com/GiovanniCornejo/Qtune/blob/main/Documentation/qtune.jpg?raw=true"
+            alt="Repository Thumbnail">
+          <p>Automatic guitar tuner utilizing the Adafruit Feather RP2040 with CircuitPython</p>
+        </a>
+        <a class="project-tile" href="https://github.com/GiovanniCornejo/Moodipy">
+          <img src="https://github.com/GiovanniCornejo/Moodipy/blob/main/Moodipy/imgs/moodipy.jpg?raw=true"
+            alt="Repository Thumbnail">
+          <p>Sentiment analysis to create a Spotify playlist that matches someone's mood</p>
+        </a>
+        <a class="project-tile" href="https://github.com/GiovanniCornejo/rca-capture-card">
+          <img src="https://th.bing.com/th/id/OIP.MfefsTGQNqPPJ7cisqqB6wHaFT?pid=ImgDet&rs=1"
+            alt="Repository Thumbnail">
+          <p>Open source RCA to USB converter prototype with an FPGA board</p>
+        </a>
+        <a class="project-tile" href="https://github.com/GiovanniCornejo/CyberBullyingDetection">
+          <img src="https://th.bing.com/th/id/OIP.TTSTs2GuRyJk5ROoWtWqSgHaFO?pid=ImgDet&rs=1"
+            alt="Repository Thumbnail">
+          <p>Cyberbullying detection using sentiment analysis for model training</p>
+        </a>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!--LINKS SECTION-->
+    <section class="links">
+      <h1>Like what you see? Let's work <span class="accent-text">together</span>.</h1>
+
+      <div class="contacts">
+        <a id="profile-link" class="contact-btn" href="https://www.github.com/GiovanniCornejo/" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+        <a class="contact-btn" href="https://www.linkedin.com/in/GiovanniCornejo/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+          LinkedIn
+        </a>
+        <a class="contact-btn" href="mailto:giocornejo424@gmail.com">
+          <i class="fas fa-at"></i>
+          Email
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
