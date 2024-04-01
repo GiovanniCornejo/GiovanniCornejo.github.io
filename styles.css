@@ -38,8 +38,8 @@ h2 {
 
 /*Navigation and Button Font: Montserrat*/
 a {
-  font-family: Montserrat, sans-serif;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /*Divider*/
@@ -66,6 +66,7 @@ a {
   justify-content: space-between;
 
   width: 100%; /*Take up entire viewport width*/
+  padding-bottom: 0.1rem;
 
   border-bottom: 2px solid black; /*Distinguish from overlapping elements*/
 }
@@ -73,9 +74,11 @@ a {
 .banner-wrap h1 a {
   letter-spacing: 0.2rem;
   font-size: 2.7rem;
-
   margin-left: 2rem;
   padding: 2rem;
+}
+.banner-wrap h1 a:hover {
+  transform: scale(1.08);
 }
 /*Nav*/
 .navbar ul {
@@ -89,13 +92,15 @@ a {
   margin-right: 2rem;
   padding: 2.3rem;
 }
+/* On hover, scale the size of the text */
+.navbar a:hover {
+  transform: scale(1.15);
+}
 /*Links*/
 .banner-wrap a {
-  display: block;
+  display: inline-block;
   color: var(--accent-color);
-}
-.banner-wrap a:hover {
-  background: var(--primary-background);
+  transition: transform 0.3s ease-in-out;
 }
 
 /*****WELCOME SECTION*****/
@@ -144,10 +149,11 @@ a {
   text-decoration: none;
   margin-top: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 }
-
 .welcome-text a:hover {
-  color: var(--primary-background);
+  transform: translateY(4px);
+  text-decoration: underline;
 }
 
 /*****PROJECTS*****/
@@ -156,7 +162,7 @@ a {
 
   min-width: 400px;
   width: 100%;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
 }
 /*Header*/
 .project-section h2 {
@@ -209,6 +215,20 @@ a {
 .project-tile img {
   width: 100%;
   height: 80%;
+}
+.project-notification p {
+  color: white;
+
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.project-notification a {
+  color: var(--accent-color);
+}
+.project-notification a:hover {
+  text-decoration: underline;
 }
 
 /*****LINKS*****/
