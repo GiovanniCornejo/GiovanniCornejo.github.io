@@ -42,9 +42,14 @@ a {
   font-weight: bold;
 }
 
+section {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /*Divider*/
 .section-divider {
-  min-width: 400px;
   width: 100%;
   height: 5px;
   background: black;
@@ -112,12 +117,22 @@ a {
   align-items: center;
   justify-content: space-evenly;
 
-  min-width: 400px;
   width: 100%;
   height: 100vh;
 }
+.welcome-image,
+.welcome-text {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 /*Image*/
-.welcome-section img {
+.welcome-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-image img {
+  max-width: 100%;
   border-radius: 50%; /*Circle image*/
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*Light shadow*/
 }
@@ -125,10 +140,11 @@ a {
 .welcome-text h1 {
   font-size: 5rem;
   color: var(--silver);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #00000080;
 }
 .accent-text {
   color: var(--accent-color);
+  white-space: nowrap;
 }
 .welcome-text h2 {
   line-height: 2;
@@ -160,7 +176,6 @@ a {
 .project-section {
   background: linear-gradient(135deg, rgb(50, 50, 50), rgb(54, 54, 109));
 
-  min-width: 400px;
   width: 100%;
   padding: 6rem 2rem;
 }
@@ -182,7 +197,7 @@ a {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(300px, 1fr)
+    minmax(210px, 1fr)
   ); /*Fit grid to width*/
   grid-gap: 5rem; /*Space out grid elements*/
   width: 100%;
@@ -193,6 +208,7 @@ a {
 }
 /*Grid tile*/
 .project-tile {
+  width: 100%;
   background: var(--light-gray);
   text-align: center;
 
@@ -210,11 +226,11 @@ a {
 
   font-size: 1.5rem;
   padding: 1rem;
-  height: 20%;
+  height: 25%;
 }
 .project-tile img {
   width: 100%;
-  height: 80%;
+  height: 75%;
 }
 .project-notification p {
   color: white;
@@ -245,13 +261,13 @@ a {
   justify-content: center;
 
   width: 100%;
-  min-width: 400px;
   height: 100vh;
 }
 /*Header*/
 .links h1 {
   color: var(--silver);
 
+  max-width: 100vw;
   display: block;
   text-align: center;
   letter-spacing: 0.1rem;
@@ -310,7 +326,7 @@ a {
 }
 @media (max-width: 500px) {
   .banner-wrap h1 a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .navbar a {
     font-size: 1.8rem;
@@ -319,21 +335,18 @@ a {
   }
 }
 
-/*Change project font size*/
-@media (max-width: 721px) {
-  .project-tile p {
-    font-size: 2rem;
-  }
-}
-
 /*Change layout*/
 @media (max-width: 700px) {
-  .welcome-section {
+  .welcome-section,
+  .contacts {
     /*Align child elements in a row, centered, and spaced evenly*/
     flex-direction: column;
   }
-  .welcome-section img {
+  .welcome-image img {
     max-height: 200px;
     margin-bottom: -10rem;
+  }
+  .welcome-text {
+    max-width: 90%;
   }
 }
