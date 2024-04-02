@@ -42,11 +42,6 @@ a {
   font-weight: bold;
 }
 
-section {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 /*Divider*/
 .section-divider {
   min-width: 400px;
