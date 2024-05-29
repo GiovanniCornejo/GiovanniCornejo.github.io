@@ -32,7 +32,8 @@ html {
 
 /*Header Font (for headings and titles): Playfair Display*/
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -192,6 +193,20 @@ section {
   text-align: center;
   letter-spacing: 0.2rem;
 }
+.project-section h3 {
+  color: white;
+
+  line-height: 2;
+  text-decoration: none;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
 /*Grid*/
 .projects-grid {
   display: grid;
